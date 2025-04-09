@@ -3,7 +3,10 @@ services:
     name: breeze-backend
     runtime: docker
     buildCommand: ./mvnw clean package
-    startCommand: java -jar target/*.jar
+    startCommand: java -jar target/BreezeDemos-0.0.1-SNAPSHOT.jar
     envVars:
-      - key: JAVA_VERSION
-        value: 17  # or 21 depending on your project
+      - key: JAVA_HOME
+        value: /opt/render/project/.render-java/openjdk-17
+
+        
+      
